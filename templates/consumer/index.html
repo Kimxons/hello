@@ -1,0 +1,54 @@
+{% block header %}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>{% block title %} FarMatrix {% endblock %}</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+	
+	<link href="{{ url_for('static', filename='css/styles1.css') }}" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+{% endblock %}
+
+<body>	
+
+<!-- Main -->
+<div class="d-md-flex h-md-100 align-items-center">
+	<div class="col-md-6 p-0 bg-indigo h-md-100">
+		<div class="text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+			<div class="logoarea pt-5 pb-5">
+				<p>
+					<i class="fa fa-anchor fa-3x"></i>
+				</p>
+				<h1 class="mb-0 mt-3 display-4">FarMatrix</h1>
+				<p></p>
+				<p style="text-align: center;">
+					FarMatrix leverages Blockchain technologies such as smart contracts & distributed ledgers to improve transparency, traceability, and build trust among maize supply chain participants.Using the Smart Contract Technology to create fair trade & transparent farm contracts that give both the consumer and the farmer the best value.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6 p-0 bg-white h-md-100 loginarea">
+		<div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+			<form class="border rounded p-5">
+				<h3 class="mb-4 text-center">Buyer Dashboard</h3>
+				<a href="{{ url_for('track') }}" class="btn btn-primary btn-round btn-block shadow-sm">Track a Product</a>
+				<a href="{{ url_for('market') }}" class="btn btn-success btn-round btn-block shadow-sm">The MarketPlace</a>
+				<a href="{{ url_for('market') }}" class="btn btn-info btn-round btn-block shadow-sm">Request Supplier</a> 
+				<br><br><br>
+				<a href="{{ url_for('logout') }}" class="btn btn-secondary btn-round btn-block shadow-sm">Logout</a>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- End Main -->
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='js/custom/index.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>

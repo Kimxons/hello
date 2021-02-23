@@ -1,0 +1,119 @@
+{% block header %}
+
+{% include 'includes/_head.html' %}
+
+{% endblock %}
+
+<body>
+  <div id="wrapper">
+    <header class="home">
+      {% include 'includes/_header.html' %}
+    </header>
+
+    <main role="main">
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row" id="loadingRow">Loading...</div>
+          <div class="row align-items-center justify-content-center" id="howItWorksTenderDocsRow">
+            <div class="row">
+              <div class="card-deck col-md-12">
+
+                <div class="card shadow-sm border-primary">
+                  <div class="card-header text-primary">
+                    <b>Upload Products</b>
+                  </div>
+                  <div class="card-body text-primary">
+                    <p class="card-text">The Supplier can upload a product into the blockchin.The hash of the ZIP file
+                      is calculated and stored on the Blockchain together with the date of submission for later
+                      verification.</p>
+                  </div>
+                </div>
+
+                <div class="card shadow-sm border-secondary">
+                  <div class="card-header text-secondary">
+                    <b>Verify Product Submission</b>
+                  </div>
+                  <div class="card-body text-secondary">
+                    <p class="card-text">The hash provided should match the one stored in the Blockchain (created during
+                      product submission). If the stored product has been modified after submission, the hash will not
+                      match with the one stored on the Blockchain.</p>
+                  </div>
+                </div>
+
+                <div class="card shadow-sm border-warning">
+                  <div class="card-header text-warning">
+                    <b>Retrieve Product Supplier Address</b>
+                  </div>
+                  <div class="card-body text-warning">
+                    <p class="card-text">Retrieve address of the Product supplier (The one who sunbmitted the product
+                      into the Blockchain. This feature is available to Admins only.</p>
+                  </div>
+                </div>
+
+                <div class="card shadow-sm border-dark">
+                  <div class="card-header text-dark">
+                    <b>Track a Product</b>
+                  </div>
+                  <div class="card-body text-dark">
+                    <p class="card-text">Track a Product along its value chain. This enables a user to view a prouct's
+                      journey during it's value chain right from the supplier.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="card-deck col-md-12">
+                <div class="card shadow-sm border-info">
+                  <div class="card-header text-info">
+                    <b>Count Product Submissions</b>
+                  </div>
+                  <div class="card-body text-info">
+                    <p class="card-text">Count number of Product Submissions. This feature is available to Admins only.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card shadow-sm border-dark">
+                  <div class="card-header text-dark">
+                    <b>Check Contract Status</b>
+                  </div>
+                  <div class="card-body text-dark">
+                    <p class="card-text">Check whether the contract is available or not.</p>
+                  </div>
+                </div>
+
+                <div class="card shadow-sm border-success">
+                  <div class="card-header text-success">
+                    <b>Toggle Contract Status</b>
+                  </div>
+                  <div class="card-body text-success">
+                    <p class="card-text">Toggle contract between available and unavailable states. This feature is
+                      available to Admins only.</p>
+                  </div>
+                </div>
+
+                <div class="card shadow-sm border-danger">
+                  <div class="card-header text-danger">
+                    <b>Destroy Contract</b>
+                  </div>
+                  <div class="card-body text-danger">
+                    <p class="card-text">Remove the Contract from Blockchain. This feature is available to Admins only.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <!-- {% include 'features/_features.html' %} -->
+      </div>
+    </main>
+  </div>
+
+  {% include 'includes/_footer.html' %}
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>

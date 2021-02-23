@@ -1,0 +1,10 @@
+Contract deployment details
+===========================
+
+Deployment date: 03 Feb 2021
+Testnet: Kovan
+
+Contract deployed in Testnet transaction: https://kovan.etherscan.io/tx/0x3a05c78369a943b17c28a745a1a1898b2372ffa9ef902521183295e0526ac91b
+Contract deployed at Testnet address: https://kovan.etherscan.io/address/0xe9afc711e958555e010a11a3c40e027a21091a94
+Block: https://kovan.etherscan.io/block/23615485
+Contract creator: https://kovan.etherscan.io/address/23615485"

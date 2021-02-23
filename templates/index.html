@@ -1,0 +1,363 @@
+{% block header %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta property="og:site_name" content="FarMatrix" /> <!-- website name -->
+	<meta property="og:title" content="FarMatrix"/> <!-- title shown in the actual shared post -->
+	<meta property="og:type" content="website" /> <!-- type -->
+	<meta property="og:image" content="{{ url_for('static', filename='img/scrn.jpg') }}"/>
+
+    <title>{% block title %} FarMatrix {% endblock %}</title>
+
+    <!-- favicons  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon/favicon-16x16.png') }}">
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link href="{{ url_for('static', filename='css/fontawesome-all.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/swiper.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/magnific-popup.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="{{ url_for('static', filename='img/logo1.png') }}">
+{% endblock %}
+
+<body data-spy="scroll" data-target=".fixed-top">
+    {% block content %}{% endblock %}
+    <!-- start Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+    {% include 'includes/_navbar.html' %}
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="text-container">
+                            <h2><span class="turquoise">Smart Maize Supply Chain.</span> </h2>
+                            <h3>Transparency | Trust | Traceability</h3>
+                            <p class="p-large">FarMatrix leverages Blockchain technologies such as smart contracts & distributed ledgers to improve transparency, traceability, and build trust among maize supply chain participants.</p>
+                            <p>Using the Smart Contract Technology to create fair trade & transparent farm contracts that give both the consumer and the farmer the best value.</p>
+                            <a class="btn-solid-reg" href="{{ url_for('login') }}">GET STARTED</a>
+                        </div> <!-- end of text-container --> 
+                    </div> <!-- end of col -->
+                    <!-- Details Lightbox 2 -->
+	                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="static/img/block.png" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Services -->
+    <div id="services" class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>What We Do..</h2>
+                    <p class="p-heading p-large">We are a not-for-profit organization with a mission to improve transparency, trust & traceability of maize in the Agricultural supply chain. We provide the Right Tools for the Participants in the Maize Supply chain</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="card-image" src="static/img/farm.png" alt="alternative">
+                        <div class="card-body">
+                            <h4 class="card-title">Information</h4>
+                            <p>Most farmers are operating at just 40% of their potential capacity access to information, farmers can now plan and harvest more effectively and gain access to market.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="card-image" src="static/img/data-1.png" alt="alternative">
+                        <div class="card-body">
+                            <h4 class="card-title">Immutable Data</h4>
+                            <p>The Distributed Ledger Technology solution provides immutable information providing trust and transparency throughout the supply chain. Each block of information proceed using a hash value</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img class="card-image" src="static/img/trace.png" alt="alternative">
+                        <div class="card-body">
+                            <h4 class="card-title">Traceability</h4>
+                            <p>Lack of traceability means tracking and recalling specific contaminated products throughout the supply chain impossible. With the DLT solution, each item can be traced from seed to consumer.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of services -->
+
+    <div id="features" class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/details-lightbox-2.svg') }}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-8">
+                    <h3>Core Features</h3>
+                    <hr>
+
+                    <table>
+                        <tr>
+                            <td width="50%" valign="top">
+                                <h5>Software as a Service (SaaS)</h5>
+                                <p>Our platform allows supply chain participants to achieve the following services:</p>
+                                <ul class="list-unstyled li-space-lg">
+                                    <li class="media">
+                                        <i class="fas fa-check"></i><div class="media-body">Farmers connect with key actors in the supply chain</div>
+                                    </li><br>
+
+                                    <li class="media">
+                                        <i class="fas fa-check"></i><div class="media-body">Distributors can carry out their activities without interruption by greedy intermediries</div>
+                                    </li><br>
+
+                                    <li class="media">
+                                        <i class="fas fa-check"></i><div class="media-body">Retailers can communicate directly with the farmers and everyone in the supply chain.</div>
+                                    </li><br>
+
+                                    <li class="media">
+                                        <i class="fas fa-check"></i><div class="media-body">Consumers to purchase maize across the supply chain.</div>
+                                    </li><br>
+
+                                    <li class="media">
+                                        <i class="fas fa-check"></i><div class="media-body">Improved agricultural productivity.</div>
+                                    </li><br>
+
+                                    <li class="media">
+                                        <i class="fas fa-check"></i><div class="media-body">Smallholder economic development.</div>
+                                    </li><br>
+
+                                    <li class="media">
+                                        <i class="fas fa-check"></i><div class="media-body"> Increased profit through value addition.</div>
+                                    </li><br>
+
+                                </ul>
+                            </td>
+                            
+                        </tr>
+                    </table>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div>
+
+    <!-- Video -->
+    <div class="basic-3">
+        <div class="container fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>The Blockchain Technology</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=6ImFBrRuGG0" data-effect="fadeIn">
+                                <img class="img-fluid" src="{{ url_for('static', filename='img/page-2.png') }}" alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of video -->
+
+
+    <!-- Testimonials -->
+    <div class="slider-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/testimonials-2-men-talking.svg') }}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <h2>What Farmers Say...</h2>
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">FarMatrix leverages Blockchain technologies such as smart contracts & distributed ledgers to improve transparency, traceability, and build trust among maize supply chain participants.</p>
+                                            <p class="testimonial-author"> Frank Musyoki - Farmer</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">FarMatrix leverages Blockchain technologies such as smart contracts & distributed ledgers to improve transparency, traceability, and build trust among maize supply chain participants.</p>
+                                            <p class="testimonial-author">Mercy Mwende - Farmer</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">FarMatrix leverages Blockchain technologies such as smart contracts & distributed ledgers to improve transparency, traceability, and build trust among maize supply chain participants.</p>
+                                            <p class="testimonial-author">James Kamau - Farmer</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+                            </div> <!-- end of swiper-wrapper -->
+                            <div class="swiper-button-next"></div><div class="swiper-button-prev"></div>
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-2 -->
+    <!-- end of testimonials -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>BitCoin Paper</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">
+                                    <a class="turquoise" href="{{ url_for('static', filename='files/bitcoin.pdf') }}"  target="_blank" >
+                                        <strong>BitCoin Paper</strong>
+                                    </a>
+                                </div>
+                            </li> 
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>TimeStamping</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">
+                                    <a class="turquoise" href="{{ url_for('static', filename='files/Timestamp.pdf') }}"  target="_blank" >
+                                        <strong>How To TimeStamp a Document</strong> 
+                                    </a>
+                                </div>
+                            </li> 
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Ethereum Paper</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">
+                                    <a class="turquoise" href="{{ url_for('static', filename='files/ethpaper.pdf') }}"  target="_blank" >
+                                        <strong>Ethereum Paper</strong>
+                                    </a>
+                                </div>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+              
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+    {% block scripts %}
+        <script >              
+          window.addEventListener('load', ()=>{
+
+            if(typeof(web3)==='undefined')
+              {
+                console.log('Web3 not Injected. Kindly make sure Metamask is installed and working!')
+              }
+            else{
+              console.log('Web3 has been Injected successfully!')
+            }
+
+            web3= new Web3(window.web3.currentProvider);
+            ethereum.enable();
+          });
+         </script>
+    {% endblock scripts %}
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="">Copyright © 2021 |<a class="turquoise" href="{{ url_for('index') }}"> FarMatrix.</a> | All rights reserved.</p>
+                    <p>Designed and Developed by <a href="https://github.com/kimxons">Sir Kimxons</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    	
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script> 
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script> 
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script> 
+    <script src="{{ url_for('static', filename='js/jquery.easing.min.js') }}"></script> 
+    <script src="{{ url_for('static', filename='js/swiper.min.js') }}"></script> 
+    <script src="{{ url_for('static', filename='js/jquery.magnific-popup.js') }}"></script> 
+    <script src="{{ url_for('static', filename='js/validator.min.js') }}"></script> 
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>

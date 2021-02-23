@@ -1,0 +1,35 @@
+{% include 'includes/_head.html' %}
+
+<div class="col-md-9 pl-md-5 pb-5 pl-0 probootstrap-inside">
+<div class="container">
+  <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Supplier</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Buyer</th>
+      <th scope="col">Buyer Id</th>
+      <th scope="col">Date and Time</th>
+    </tr>
+  </thead>
+  {% for data in datas %}
+  <tbody>
+    <tr>
+      <td>{{data.1}}</td>
+      <td>{{data.3}}</td>
+      <td>{{data.4}}</td>
+      <td>{{data.0}}</td>
+      <td>{{data.2}}</td>
+    </tr>
+  </tbody>
+  {% endfor %}
+</table> 
+</div>
+</div> 
+      </div>
+    </div>
+  </section>
+  
+
+
+      
