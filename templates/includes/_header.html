@@ -3,6 +3,8 @@
       <a href="{{ url_for('Supplier') }}" class="navbar-brand d-flex align-items-center" id="homeTenderDocsMenuButton">
         <strong>FarMatrix</strong>
       </a>
+
+      <button onClick="window.location.href='http://localhost:3000/'" class="btn btn-outline-secondary">MarketPlace</button>
     <div class="content flex">
       <div class="right">
         <button onClick="window.location.href='https://etherscan.io/address/0x7bfbcF9ceE4ef8887BC355bE614d12BC0e64fe42'" class="btn btn-outline-secondary">Explorer</button>
@@ -25,8 +27,8 @@
 <div>
   <a href="{{ url_for('addProduct')}}" class="btn btn-outline-primary my-2 btn-sm" aria-pressed="true" id="uploadProductMenuButton">Upload Product</a>
   <a href="#" class="btn btn-outline-secondary my-2 btn-sm" aria-pressed="true" id="verifyProductMenuButton">Verify Product</a>
-  <a href="#" class="btn btn-outline-warning my-2 btn-sm" aria-pressed="true" id="retrieveProductAddressMenuButton">Retrieve Tender Submitter Address</a>
-  <a href="#" class="btn btn-outline-info my-2 btn-sm" aria-pressed="true" id="getProductCountMenuButton">Count Tender Submissions</a>
+  <a href="#" class="btn btn-outline-warning my-2 btn-sm" aria-pressed="true" id="retrieveProductAddressMenuButton">Retrieve Product Submitter Address</a>
+  <a href="#" class="btn btn-outline-info my-2 btn-sm" aria-pressed="true" id="getProductCountMenuButton">Count Product</a>
   <a href="#" class="btn btn-outline-dark my-2 btn-sm" aria-pressed="true" id="checkContractStatusMenuButton">Check Contract Status</a>
   <a href="#" class="btn btn-outline-success my-2 btn-sm" aria-pressed="true" id="toggleContractStatusMenuButton">Toggle Contract Status</a>
   <a href="#" class="btn btn-outline-info my-2 btn-sm" aria-pressed="true" id="trackProductMenuButton">Track a Product</a>
